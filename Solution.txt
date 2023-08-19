@@ -29,7 +29,7 @@ Ans:$ cut -d ',' -f2,4 stud.csv
 Ans:$ sort -t ',' -f2 stud.csv
 
 11. Display count of each line in "Stud.csv". Means how many time records repeat in file.
-Ans:$
+Ans:$ cut -d ',' -f 1-4 stud.csv | sort | uniq -c
 
 12. Convert "into.txt" file into uppercase.
 Ans:$ cat into.txt | tr "[a-z]" "[A-Z]"
@@ -41,6 +41,6 @@ Ans:$ echo "VTCBB" | tr "VTCBB" "VTBB"
 Ans:$ echo "VTCBB" | tr "VTCBB" "VTCD"
 
 15. Display only duplicate line from file "stud.csv"
-Ans:$ 
+Ans:$ uniq -d into.txt
 
 
